@@ -1,0 +1,33 @@
+.navbar {
+  position: inherit;
+  background-color: #252728;
+  z-index: 10;
+  text-align: left;
+  padding: 5px 15px;
+  line-height: 35px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 15px 50px;
+}
+
+.navbar * {
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: #f6f7f9;
+}
+
+.menu_links {
+  margin-right: 80px;
+}
+
+.menu_links:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  transition: all 1s ease-in;
+}
