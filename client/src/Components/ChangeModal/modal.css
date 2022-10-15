@@ -1,0 +1,63 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal-content {
+  width: 550px;
+  color: black;
+  min-height: 200px;
+  background-color: #a7a7a7;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  padding: 25px;
+}
+
+.modal_button {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  top: -60px;
+  left: 580px;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  background-color: #a7a7a7;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.modal_button::before,
+.modal_button::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: #333;
+  display: block;
+  transform: rotate(45deg) translateX(0px);
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.modal_button::after {
+  transform: rotate(-45deg) translateX(0px);
+}
