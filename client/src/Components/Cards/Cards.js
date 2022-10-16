@@ -4,21 +4,20 @@ import addAllCreatures from '../../Redux/Actions/creatureAction';
 import CardItem from '../CardItem/CardItem';
 import './cards.css';
 
-function Cards() {
+function Cards({ countPage }) {
   const dispach = useDispatch();
-  const { creatures, modal } = useSelector((state) => state);
+  const { creatures } = useSelector((state) => state);
   useEffect(() => {
     // при переходе на другие страницы и обратно существа не добавляются заново
     if (!creatures.length) {
-      dispach(addAllCreatures());
+      dispach(addAllCreatures(1));
     }
   }, []);
-  console.log('ssss', creatures);
 
   return (
     <div>
       <div className="card-layout">
-        {creatures[0]?.map((el, i) => (
+        {creatures?.map((el) => (
           <CardItem el={el} />
         ))}
       </div>

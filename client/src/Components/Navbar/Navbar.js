@@ -1,7 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useCallback } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import './navbar.css';
 
+function getActiveClassName({ isActive }) {
+  return isActive ? 'selected' : 'menu_links';
+}
 function Navbar() {
   return (
     <div className="sticky__t-0">
@@ -18,12 +21,12 @@ function Navbar() {
           </Link>
         </div>
         <div>
-          <Link className="menu_links" to="/">
+          <NavLink className={getActiveClassName} to="/" end>
             Main
-          </Link>
-          <Link className="menu_links" to="/characters">
+          </NavLink>
+          <NavLink className={getActiveClassName} to="characters" end>
             Characters
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>

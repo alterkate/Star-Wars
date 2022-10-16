@@ -16,7 +16,6 @@
 .characters_input_container {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 .characters_input {
@@ -36,11 +35,29 @@
   color: rgba(33, 33, 33, 0.8);
 }
 
-input[type='text'] {
+.characters_input[type='text'] {
   padding: 4px 21px;
 }
 
-input:focus {
+.characters_input:focus {
   box-shadow: 4px 4px 16px rgb(190 192 195 / 78%);
   transition: all 0.3s ease-in;
+}
+
+.characters_load_more {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.characters_load_more:hover {
+  -o-transform: scale(1.1, 1.1) rotate(-3deg);
+  -ms-transform: scale(1.1, 1.1) rotate(-3deg);
+  -moz-transform: scale(1.1, 1.1) rotate(-3deg);
+  -webkit-transform: scale(1.1, 1.1) rotate(-3deg);
+  transform: scale(1.1, 1.1) rotate(-3deg);
+  -o-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }

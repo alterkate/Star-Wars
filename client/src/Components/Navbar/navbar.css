@@ -31,3 +31,8 @@
   border-bottom: 1px solid white;
   transition: all 1s ease-in;
 }
+
+.selected {
+  border-bottom: 1px solid white;
+  margin-right: 80px;
+}

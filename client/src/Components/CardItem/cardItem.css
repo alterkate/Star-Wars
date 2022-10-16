@@ -1,5 +1,5 @@
 .card-layout__item {
-  flex-basis: 33%;
+  width: 200px;
   color: white;
   border: 2px solid #ffffff;
   border-radius: 13px;
@@ -30,6 +30,7 @@
   text-align: center;
   justify-content: center;
   margin-left: 4px;
+  font-size: 12px;
 }
 
 .card-layout__item_size_properties_naming > span {
@@ -40,6 +41,63 @@
 
 .card-layout__item_gender_year {
   display: flex;
+  margin-top: 20px;
+}
+
+.card-layout__item_gender_pink {
+  background: #c956ff;
+  box-shadow: inset 0px -2px 0px rgb(0 0 0 / 18%);
+  border-radius: 11px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #212121;
+  padding: 2px 10px;
+}
+
+.card-layout__item_gender_green {
+  background: #73d677;
+  box-shadow: inset 0px -2px 0px rgb(0 0 0 / 18%);
+  border-radius: 11px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #212121;
+  padding: 2px 10px;
+}
+.card-layout__item_gender_yellow {
+  background: #f5db13;
+  box-shadow: inset 0px -2px 0px rgb(0 0 0 / 18%);
+  border-radius: 11px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #212121;
+  padding: 2px 10px;
+}
+
+.card-layout__item_birthYear {
+  background: #07d6f2;
+  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 11px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #212121;
+  padding: 2px 10px;
+  margin-left: 5px;
 }
 
 .modal_item {

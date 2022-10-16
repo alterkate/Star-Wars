@@ -12,8 +12,6 @@
 }
 
 .Main_H1 {
-  font-family: 'Karla';
-  font-style: normal;
   font-weight: 700;
   font-size: 72px;
   line-height: 84px;
@@ -23,8 +21,6 @@
 }
 
 .Main_H2 {
-  font-family: 'Karla';
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 37px;
@@ -47,4 +43,20 @@
 
 .btn:active {
   background: #8b6a05;
+}
+
+@media (max-width: 1106px) {
+  .Main_H1 {
+    font-size: 62px;
+    line-height: 84px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+
+  .Main_H2 {
+    font-size: 22px;
+    line-height: 37px;
+    color: #ffffff;
+  }
 }

@@ -19,8 +19,20 @@ function CardItem({ el }) {
       >
         <div className="card-layout__item_name">{el.name}</div>
         <div className="card-layout__item_size">
-          <div className="card-layout__item_size_properties">{el.mass}</div>
-          <div className="card-layout__item_size_properties">{el.height}</div>
+          {el.mass !== 'unknown' ? (
+            <div className="card-layout__item_size_properties">
+              {el.mass}
+            </div>
+          ) : (
+            <div className="card-layout__item_size_properties">?</div>
+          )}
+          {el.height !== 'unknown' ? (
+            <div className="card-layout__item_size_properties">
+              {el.height}
+            </div>
+          ) : (
+            <div className="card-layout__item_size_properties">?</div>
+          )}
         </div>
         <div className="card-layout__item_size_properties_naming">
           <span>mass</span>
