@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import addAllCreatures from '../../Redux/Actions/creatureAction';
+import { disableLoader, enableLoader } from '../../Redux/Actions/loaderAction';
 import Cards from '../Cards/Cards';
 import './characters.css';
 
@@ -18,7 +19,6 @@ function Characters() {
     dispatch(addAllCreatures({ page: countPage }));
     setCountPage(countPage === 9 ? 1 : countPage + 1);
   };
-
   return (
     <div>
       <h1 className="characters_h1">

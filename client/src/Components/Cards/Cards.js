@@ -1,27 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import addAllCreatures from '../../Redux/Actions/creatureAction';
+import { disableLoader, enableLoader } from '../../Redux/Actions/loaderAction';
 import CardItem from '../CardItem/CardItem';
+import Loader from '../Loader/Loader';
 import './cards.css';
 
-function Cards({ countPage }) {
-  const dispach = useDispatch();
-  const { creatures } = useSelector((state) => state);
+function Cards() {
+  const dispatch = useDispatch();
+  const { creatures, loader } = useSelector((state) => state);
   useEffect(() => {
     // при переходе на другие страницы и обратно существа не добавляются заново
     if (!creatures.length) {
-      dispach(addAllCreatures(1));
+      dispatch(addAllCreatures(1));
     }
   }, []);
 
-  return (
+  return !loader ? (
     <div>
       <div className="card-layout">
-        {creatures?.map((el) => (
+        {creatures.map((el) => (
           <CardItem el={el} />
         ))}
       </div>
     </div>
+  ) : (
+    <Loader />
   );
 }
 
