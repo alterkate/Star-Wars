@@ -12,18 +12,17 @@ function Navbar() {
         <div>
           <Link to="/">
             <img
+              className="navbar_logo"
               alt="logo"
               src="/images/Star_wars_logo.png"
-              style={{
-                height: 70,
-              }}
             />
           </Link>
         </div>
-        <div>
+        <div className="navbar_links">
           <NavLink className={getActiveClassName} to="/" end>
             Main
           </NavLink>
+          <div className="divider" />
           <NavLink className={getActiveClassName} to="characters" end>
             Characters
           </NavLink>

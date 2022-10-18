@@ -19,7 +19,7 @@
 
 .error_death_star {
   position: absolute;
-  top: 200px;
+  top: 55px;
   z-index: 2;
   width: 400px;
 }
@@ -40,4 +40,18 @@
 
 .error_btn:active {
   background: #48894a;
+}
+
+@media (max-width: 424px) {
+  /* MOBILE */
+
+  .error_code {
+    margin-top: 60px;
+    font-size: 150px;
+  }
+  .error_death_star {
+    top: 80px;
+    left: 125px;
+    width: 150px;
+  }
 }

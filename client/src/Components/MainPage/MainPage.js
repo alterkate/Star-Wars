@@ -10,7 +10,7 @@ function MainPage() {
         <h2 className="Main_H2">
           You can find out all the information about your favorite characters
         </h2>
-        <Link to="/characters">
+        <Link className="Main_link" to="/characters">
           <button type="button" className="btn">
             See more...
           </button>

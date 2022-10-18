@@ -139,3 +139,23 @@
   font-size: 12px;
   margin-left: 5px;
 }
+
+@media (max-width: 424px) {
+  /* MOBILE */
+
+  .modal_item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal_item_image_container {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ffffff;
+  }
+  .modal_item_image {
+    border-right: 0;
+    margin: 2px 15px;
+    width: 200px;
+  }
+}
