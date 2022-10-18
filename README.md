@@ -16,13 +16,11 @@ I built this app to work with external API data.
 
 Some screenshots to show how app displays on mobile devices:
 
-![Screenshot](ReadmeImages/phone_1.png)
-![Screenshot](ReadmeImages/phone_2.png)
-![Screenshot](ReadmeImages/phone_3.png)
-![Screenshot](ReadmeImages/phone_4.png)
+![Screenshot](ReadmeImages/phone.png)
 
-And on laptop: 
+And on laptop. (Also there is one for the tablets, but it's too boring to arrange a readme file).
 
 ![Screenshot](ReadmeImages/laptop_2.png)
 ![Screenshot](ReadmeImages/laptop_3.png)
+Look at this funny Jabba the Hutt who is spinning around while we getting a data from api ^_^
 ![Screenshot](ReadmeImages/laptop_4.png)
