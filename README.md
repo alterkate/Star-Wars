@@ -2,8 +2,8 @@
 
 A React app built using data from the swapi.dev API with the help of: 
 
-> Redux
-> Saga
+> Redux / 
+> Saga / 
 > Axios
 
 Check out the app [HERE](https://star-wars-barsukova.vercel.app/)!
