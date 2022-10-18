@@ -48,6 +48,10 @@
 @media (min-width: 425px) and (max-width: 1024px) {
   /* TABLET */
 
+  .main {
+    position: relative;
+  }
+
   .Main_H1 {
     font-size: 62px;
     line-height: 84px;
@@ -63,7 +67,11 @@
     color: #ffffff;
   }
   .yoda {
-    width: 400px;
+    position: absolute;
+    top: 111px;
+    left: 65px;
+    opacity: 0.2;
+    z-index: -1;
   }
 }
 

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import addAllCreatures from '../../Redux/Actions/creatureAction';
-import { disableLoader, enableLoader } from '../../Redux/Actions/loaderAction';
 import Cards from '../Cards/Cards';
 import './characters.css';
 

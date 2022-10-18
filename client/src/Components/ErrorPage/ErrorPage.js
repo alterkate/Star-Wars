@@ -8,7 +8,7 @@ function ErrorPage() {
       <h1 className="error_code">404</h1>
       <img
         className="error_death_star"
-        src="./images/death_star.png"
+        src="/./images/death_star.png"
         alt="death star"
       />
       <Link to="/">

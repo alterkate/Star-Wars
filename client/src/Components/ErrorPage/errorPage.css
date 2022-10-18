@@ -42,6 +42,19 @@
   background: #48894a;
 }
 
+@media (min-width: 425px) and (max-width: 1024px) {
+  /* TABLET */
+  .error_code {
+    margin-top: 60px;
+    font-size: 190px;
+  }
+  .error_death_star {
+    top: 100px;
+    width: 180px;
+  }
+
+}
+
 @media (max-width: 424px) {
   /* MOBILE */
 
@@ -51,7 +64,6 @@
   }
   .error_death_star {
     top: 80px;
-    left: 125px;
     width: 150px;
   }
 }
